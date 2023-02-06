@@ -6,9 +6,9 @@ Object Orientation Promgram
     - State( data)
     - Behavior (method and functions)
   
-  Encapsulation and abstraction  
-  Inheritance and polymorphism
-  Interfaces and system design
+   Encapsulation and abstraction  
+   Inheritance and polymorphism
+   Interfaces and system design
 
   
   
