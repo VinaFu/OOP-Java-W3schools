@@ -10,7 +10,15 @@ Object Orientation Promgram
    - Inheritance and polymorphism
    - Interfaces and system design
 
+ General Ideas:
   
+      Class:
+          Instances
+          
+      has-a: belonging
+      is- a: description
+    
+      Java final keywords: avoid a variable from being  overriden.
   
   
   
