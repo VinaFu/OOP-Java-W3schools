@@ -2,6 +2,8 @@
 
 Object Orientation Promgram
 
+-- w3schools
+
 Syntax:
 
         1) new:
@@ -32,7 +34,14 @@ Attributes:      class attributes are variables within a class
                 }
 
 
+
+
+
+
+-----------------------------------------------------------------------
+
 Something you already know:
+(Pluralsight lesson)
 
   Objects:
     - State( data)
