@@ -4,12 +4,19 @@ Object Orientation Promgram
 
 -- w3schools
 
-Syntax:
+Common sense: 
+
+        parentheses - 括号(); semicolon (;)
+        out-> till class -> cmd -> "java Main": run in the terminal
+        src-> till class -> packages: manually in same folder com.pluralsight.projectName.Main(Othername)
+
+Keywords: see more in modifiers
 
         1) new:
-            To create an object of Main, specify the class name, followed by the object name, and use the keyword new: 
+            How to create an object
             Main myObj = new Main() // an object of Main()
-        //  [original class] name = new [original name]
+                //    Main myObj = new Main() 
+                // [class] objName = new [class] for public class, see below
         
         2) final: 
             Avoid a variable from being overriden/changed. Not inherited by other classes.
@@ -26,7 +33,9 @@ Syntax:
         5) static & public 
             static: it can be accessed without creating an object of the class         
             public: can only be accessed by objects; so u'll have a dot[.] 
-        
+            
+            5.0 Example for static & private
+            
                 public class Main {
                   // Static method
                   static void myStaticMethod() {
@@ -40,14 +49,65 @@ Syntax:
 
                   // Main method
                   public static void main(String[] args) {
-                    myStaticMethod(); // Call the static method
-                    // myPublicMethod(); This would compile an error
-
+                    myStaticMethod(); // Call the static method; no dot
+                    
                     Main myObj = new Main(); // Create an object of Main
                     myObj.myPublicMethod(); // Call the public method on the object
                   }
                 }
         
+            5.1 Access Methods With an Object
+                Example Requirements:" Create a Car object named myCar. Call the fullThrottle() and speed() methods on the myCar object, and run the program "
+                
+                public class Main { // class Name same with the filename = Capitalize
+                
+                    // build the methods in class
+                    public void fullThrottle(){  // method 1
+                        System.out.println("This is fullThrottle!");
+                    }          
+                    public void speed(int maxSpeed){        // method 2 + define parameter and type
+                        System.out.println("The max speed is " + maxSpeed + "!");
+                    }           
+
+                    // build object to use the methods from class 
+                    public static void main(String[] args) { // call the methods in object
+                        Main myCar = new Main();        // call from the attributes
+                        myCar.fullThrottle();
+                        myCar.speed(350);
+                        }
+                    }
+                                                            Outcome:
+                                                                This is fullThrottle!
+                                                                The max speed is 350!
+
+            5.2 Using Multiple Classes - Essential for OOP
+                如果您在不同的页面中有Classes，您仍然可以在不同的页面中使用它们;
+                必须确保这些页面在相同的文件下（手动），或者在terminal使用 javac 
+                Example Above
+                
+                [ Main.java ] - one page
+                
+                        public class Main {
+                          public void fullThrottle() {
+                            System.out.println("The car is going as fast as it can!");
+                          }
+
+                          public void speed(int maxSpeed) {
+                            System.out.println("Max speed is: " + maxSpeed);
+                          }
+                        }         // Null print or return
+
+                [ Second.java ] - another page
+                        class Second {
+                          public static void main(String[] args) {
+                            Main myCar = new Main();     
+                            myCar.fullThrottle();      
+                            myCar.speed(200);          
+                          }
+                        }         // call the methods here, so run it, u get the outcomes
+            
+            
+            
         6)
         
         
