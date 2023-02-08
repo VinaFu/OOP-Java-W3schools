@@ -6,9 +6,9 @@ Object Orientation Promgram
 
 Common sense: 
 
-        parentheses - 括号(); semicolon (;)
-        out-> till class -> cmd -> "java Main": run in the terminal
-        src-> till class -> packages: manually in same folder com.pluralsight.projectName.Main(Othername)
+        C1. parentheses - 括号(); semicolon (;)
+        C2. out-> till class -> cmd -> "java Main": run in the terminal
+            src-> till class -> packages: manually in same folder com.pluralsight.projectName.Main(Othername)
 
 Keywords: see more in modifiers
 
@@ -34,7 +34,7 @@ Keywords: see more in modifiers
             static: it can be accessed without creating an object of the class         
             public: can only be accessed by objects; so u'll have a dot[.] 
             
-            5.0 Example for static & private
+            5.0) Example for static & private
             
                 public class Main {
                   // Static method
@@ -56,7 +56,7 @@ Keywords: see more in modifiers
                   }
                 }
         
-            5.1 Access Methods With an Object
+            5.1) Access Methods With an Object
                 Example Requirements:" Create a Car object named myCar. Call the fullThrottle() and speed() methods on the myCar object, and run the program "
                 
                 public class Main { // class Name same with the filename = Capitalize
@@ -80,7 +80,7 @@ Keywords: see more in modifiers
                                                                 This is fullThrottle!
                                                                 The max speed is 350!
 
-            5.2 Using Multiple Classes - Essential for OOP
+            5.2) Using Multiple Classes - Essential for OOP
                 如果您在不同的页面中有Classes，您仍然可以在不同的页面中使用它们;
                 必须确保这些页面在相同的文件下（手动），或者在terminal使用 javac 
                 Example Above
@@ -106,7 +106,9 @@ Keywords: see more in modifiers
                           }
                         }         // call the methods here, so run it, u get the outcomes
             
-            
+                                                            Outcome:
+                                                                This is fullThrottle!
+                                                                The max speed is 200!
             
         6)
         
