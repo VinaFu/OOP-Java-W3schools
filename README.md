@@ -99,7 +99,7 @@ Keywords: see more in modifiers
 
                 [ Second.java ] - another page
                         class Second {
-                          public static void main(String[] args) {
+                          public static void main(String[] args) { // void the method! main
                             Main myCar = new Main();     
                             myCar.fullThrottle();      
                             myCar.speed(200);          
